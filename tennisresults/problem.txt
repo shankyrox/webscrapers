@@ -1,0 +1,15 @@
+On the tennislink website : http://tennislink.usta.com/Tournaments/Schedule/Search.aspx, doing a search returns a list of tournaments. We can see the results by clicking on the link. It returns a url of the form: http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=185390. The last part in the url is the link id. Pass the link id and a division (Girls 18s, Boys 18s etc), to see the results of that category. 
+
+$ python3.6 tennisresults.py --help
+usage: tennisresults.py [-h] [-d {b18s,g18s,b18d,g18d}] linkId
+
+Get tournament results
+
+positional arguments:
+  linkId                Enter link id for tournament results page
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d {b18s,g18s,b18d,g18d}
+                        Select one : Boys 18 singles, Girls 18 singles, Boys
+                        18 doubles, Girls 18 doubles
