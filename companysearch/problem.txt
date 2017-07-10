@@ -1,0 +1,8 @@
+Read the company name and location from list of companies in "CompanyList.xlsx". Search for this company on google, retrieve the link for 
+top 5 results and save it to "SearchResults.xlsx" against the company name 
+
+Improvement suggestion : Instead of putting scrapped url in "SearchResults.txt", use the text from search result and hyperlink it to the 
+						 scrapped url. This would improve readability. 
+
+Limitations : Currently openpyxl edits entire worksheet in memory and then writes to file. It would exhaust memory for very very large 
+			  files. Use "openpyxl.writer.write_only.WriteOnlyWorkhseet" instead when working with large files.
