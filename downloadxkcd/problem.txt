@@ -1,0 +1,3 @@
+Download all comics from "https://xkcd.com/" using the next button and save it to folder ./xkcd/ 
+
+Some sample images downloaded using scrapper copied to folder
