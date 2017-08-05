@@ -1,0 +1,11 @@
+From linkedin website search for a title (ceo, head of sales, etc.) or person or company. Find the list of people matching 
+that criteria. Store all the results (max 100 results) to search.xlsx along with the details. 
+
+
+Solution Notes : 
+
+Currently these details are extracted : Name, Profile link, Title 
+Install all the requisite modules and make sure geckodriver is downloaded and present on an excutable $PATH
+Can use cx_freeze to bundle and make an executable
+Logs are present in log file created by name script.log
+Dummy username and password are used. Use personal credentials to use script 
