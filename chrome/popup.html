@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/third-party/bootstrap.min.css">
+  <link rel="stylesheet" href="css/popup.css" type="text/css">
+  <script src="js/third-party/jquery.min.js"></script>
+  <script src="js/third-party/sha1.js"></script>
+  <script src="node_modules/oauth-signature/dist/oauth-signature.js"></script>
+  <script src="js/third-party/simi.js"></script>
+  <script src="js/third-party/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="clearfix">
+    <img class="float-left" src="images/logo16.png">
+    <h1><b>Find Trademark breaches</b></h1>
+  </div>
+  <hr>
+  <div>
+    <ol>
+      <li>
+        <div class="clearfix">
+          <div class="float-right" style="margin-right:56px;">
+            <img id="li-uploaded-logo" src="images/logo_placeholder.png">
+            <p id="li-button-text"></p>
+          </div>
+          <p>What's your logo?</p>
+          <!-- <input type="file" id="li-input-logo" accept="image/gif, image/jpeg, image/png"> -->
+          <button type="button" id="li-input-logo" class="btn btn-primary">Upload logo</button>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>Search for your company name in <span id="span-website-name"></span>'s Search bar</p>
+          <button type="button" id="startSearch" class="btn btn-primary">Search</button>
+          <a href="#" id="a-download-csv-link">
+            <button type="button" id="btn-download-csv" class="btn btn-primary" disabled>Download CSV</button>
+          </a>
+        </div>
+      </li>
+    </ol>
+    <hr>
+    <div style="text-align:center;">
+      <a id="a-how-it-works" href="#" style="font-size:14px;">How it works</a>
+    </div>
+  </div>
+
+  <div class="loader-with-text">
+    <div class="loader" id="div-loading-search-results">
+    </div>
+    <span id="span-loading-text">Loading</span>
+  </div>
+
+  <div class="modal"></div>
+
+  <div id="div-html-results-page">
+    <div>
+      <a href="#" id="a-download-json-link"></a>
+    </div>
+  </div>
+  <a href="#" id="fblogininfo"></a>
+
+  <script src="js/fbSearch.js"></script>
+  <script src="js/instaSearch.js"></script>
+  <script src="js/twitterSearch.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+
+</html>

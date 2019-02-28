@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display file matches</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/third-party/simi.js"></script>
+    <link rel="stylesheet" href="css/matches.css" type="text/css">
+</head>
+<body>
+    <h1>See your matches</h1>
+    <h2>Upload JSON file</h2>
+    <input type="file" id="btn-upload-file" accept=".json"></button>
+    <h2>Source Image</h2><hr>
+    <img src="images/logo_placeholder.png" id="img-src-img" style="height:48px;width:48px;">
+    <h2>Matching Images</h2><hr>
+    <div id="div-matching-images"></div>
+    <div style="clear:both;"></div>
+    <h2>Other Images</h2><hr>
+    <div id="div-other-images"></div>
+    <script src="js/matches.js"></script>
+</body>
+</html>
