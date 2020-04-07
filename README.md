@@ -16,3 +16,4 @@ Detailed information about each webscraper is present in `problem.txt` file adde
 # Webscraping via JavaScript
 
 * **chrome :** This folder contains a chrome extension which extracts information from popular websites - *Twitter, Facebook* and *Instagram*. It uses Javascript to pull data from these websites.
+* **linkedin-parser** This folder contains a fully working chrome extension which can parse search results from a linkedin sales navigator page, visit each profile on the page and extract all details including experience and education. The information is stored in json format and POSTed back to a mongodb server.
